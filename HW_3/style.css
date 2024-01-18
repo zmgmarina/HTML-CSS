@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    padding-bottom: 96px;
+}
+
+.logo {
+    margin-top: 39.71px;
+    margin-bottom: 83.4px;
+}
+
+.logo_text {
+    margin-top: 44.68px;
+    margin-bottom: 88.36px;
+}
+
+.menu {
+    margin-top: 50.64px;
+    margin-bottom: 94.03px;
+}
+.content {
+    margin-bottom: 161.29px;
+}
+
+.title {
+    margin-bottom: 16.88px;
+}
+
+.button {
+    margin-top: 36.74px;
+    margin-bottom: 160.84px;
+}
+
+.logos {
+    padding-top: 97px;
+}
