@@ -112,7 +112,7 @@ body {
 .buttons {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
     gap: 72px;
 
 }
