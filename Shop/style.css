@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.center {
+    padding-left: calc(50% - 376px);
+    padding-right: calc(50% - 376px);
+}
+
+.header {
+    padding-bottom: 65px;
+
+}
+
+.brand {
+    background-color: rgb(236, 218, 218);
+    display: flex;
+    width: 768px;
+}
+
+.menu {
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.offer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+}
+
+.info {
+    padding-top: 110px;
+    padding-bottom: 72px;
+    text-align: center;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 14px;
+    grid-template-rows: 33% 33% 33%;
+    justify-content: center;
+    padding-bottom: 33px;
+}
+
+.button {
+    padding-bottom: 70px;
+    text-align: center;
+}
