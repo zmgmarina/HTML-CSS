@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
 
 .top {
     display: flex;
@@ -49,6 +53,16 @@
     padding-top: 110px;
     padding-bottom: 72px;
     text-align: center;
+}
+
+.title {
+    font: 30px;
+    color: #222;
+}
+
+.text {
+    font: 14px;
+    color: #9f9f9f;
 }
 
 .catalog {
