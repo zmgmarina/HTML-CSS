@@ -27,10 +27,23 @@ body {
 
 }
 
+
 .brand {
-    background-color: rgb(236, 218, 218);
-    display: flex;
+    position: relative;
     width: 768px;
+}
+
+.man {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.br {
+    position: absolute;
+    left: 50%;
+    top: 35%;
 }
 
 .menu {
