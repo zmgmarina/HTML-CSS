@@ -8,50 +8,50 @@ body {
 }
 
 .top {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
     padding-left: 16px;
     padding-right: 16px;
 }
 
 .center {
-    padding-left: calc(50% - 376px);
-    padding-right: calc(50% - 376px);
-}
-
-.header {
-    padding-bottom: 65px;
-
-}
-
-
-.brand {
-    position: relative;
-    width: 768px;
-}
-
-.man {
-    position: absolute;
-    left: 0;
-    top: 0;
-
-}
-
-.br {
-    position: absolute;
-    left: 50%;
-    top: 35%;
+    padding-left: calc(50% - 374px);
+    padding-right: calc(50% - 374px);
 }
 
 .menu {
     background-color: #222;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    gap: 103px;
+}
 
+.logo {
+    padding: 18px 32px;
+}
+
+.menu_button {
+    display: flex;
+    gap: 27px;
+    padding: 18px 32px;
+}
+
+.header {
+    padding-bottom: 65px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+}
+
+.brand_header {
+    background-color: rgb(244, 230, 229);
+    width: 100vw;
+    min-height: 363px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .offer {
@@ -77,16 +77,75 @@ body {
     color: #9f9f9f;
 }
 
+
 .catalog {
-    display: grid;
-    grid-template-columns: 48% 48%;
-    gap: 14px;
-    grid-template-rows: 33% 33% 33%;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 14px;
     padding-bottom: 33px;
 }
 
 .button {
     padding-bottom: 70px;
     text-align: center;
+}
+
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    @media screen and (max-width:767px) {
+        .icon2 {
+            visibility: hidden;
+            display: none;
+        }
+
+        .icon3 {
+            visibility: hidden;
+            display: none;
+        }
+
+    }
+
+    @media screen and (max-width:767px) {
+        .man {
+            visibility: hidden;
+            display: none;
+        }
+    }
+
+    .brand_header {
+        min-width: 375px;
+    }
+
+    .brand {
+        width: 263px;
+        height: 66px;
+        padding-top: 148px;
+    }
+
+    .img_offer {
+        min-width: 90vw;
+        gap: 32px;
+    }
+
+    .info {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .catalog {
+        padding-bottom: 40px;
+    }
+
+    .button {
+        padding-bottom: 85px;
+    }
+
 }
