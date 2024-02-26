@@ -26,13 +26,22 @@ body {
 }
 
 .logo {
+    display: flex;
+    gap: 41px;
+    align-items: center;
     padding: 18px 32px;
+
 }
 
-.menu_button {
+.look {
+    padding-top: 10px;
+}
+
+.menu_icon {
     display: flex;
-    gap: 27px;
-    padding: 18px 32px;
+    gap: 20px;
+    padding: 19px 32px;
+    margin-top: 10px;
 }
 
 .header {
@@ -52,6 +61,23 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+
+}
+
+.section {
+    display: flex;
+    gap: 16px;
+}
+
+.brand {
+    font: 900 44px "Lato", sans-serif;
+    color: #222;
+}
+
+
+.fashion {
+    font: 700 'Lato', sans-serif 24px;
 }
 
 .offer {
@@ -94,6 +120,11 @@ body {
     text-align: center;
 }
 
+.button:hover {
+    transition: transform 0.5s;
+    transform: scale(1.1);
+}
+
 .section_info {
 
     display: flex;
@@ -129,7 +160,7 @@ body {
     font-weight: 100;
 }
 
-.subscribe_content {
+.section_subscribe {
     padding-top: 64px;
     display: flex;
     flex-direction: column;
@@ -192,8 +223,11 @@ body {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     border: 0;
-
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #5c5353;
 }
+
 
 .subscribe_button {
     background: #f16d7f;
@@ -205,7 +239,12 @@ body {
     color: #fff;
 }
 
-.footer {
+.subscribe_button:hover {
+    background: #deabba;
+}
+
+
+.section_lower {
     background: #222;
     max-width: 767vw;
     height: 79px;
@@ -221,7 +260,9 @@ body {
     color: #fbfbfb;
 }
 
-
+.icon_item:hover {
+    background: #a87684;
+}
 
 @media (max-width: 767px) {
     .center {
@@ -253,10 +294,25 @@ body {
         min-width: 375px;
     }
 
+    .section {
+        min-width: 263px;
+        min-height: 66px;
+        align-items: flex-end;
+        justify-content: center;
+        /* padding-top: 148px; */
+    }
+
+    .img_rectangle {
+        height: 61px;
+    }
+
     .brand {
-        width: 263px;
-        height: 66px;
-        padding-top: 148px;
+        font: 900 38px "Lato", sans-serif;
+
+    }
+
+    .fashion {
+        font: 700 20px "Lato", sans-serif;
     }
 
     .img_offer {
