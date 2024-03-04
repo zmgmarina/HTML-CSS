@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.header {
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header_left {
+  display: flex;
+  align-items: baseline;
+  gap: 41px;
+}
+
+.header_right {
+  display: flex;
+  gap: 25px;
+}
+
+.brand-head {
+  background-color: rgb(244, 230, 229);
+  margin-bottom: 65px;
+}
+
+.brand-head_section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 330px;
+}
+
+.section-heading {
+  display: flex;
+  gap: 16px;
+}
+
+.brand {
+  font-size: 48px;
+  font-weight: 900;
+  color: #222;
+}
+
+.luxerious {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.fashion {
+  color: #f16d7f;
+}
+
+.offer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.img_offer {
+  width: 360px;
+}
+
+.img_offer_accesories {
+  width: 1140px;
+}
+
+.info {
+  padding-top: 96px;
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  color: #222;
+  font-weight: 400;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+
+.box-product {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.productItem {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+}
+.productItem__info {
+  background-color: #f8f8f8;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.productItem__name {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000;
+}
+.productItem__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5d5d5d;
+  width: 314px;
+}
+.productItem__price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+}
+.productItem:hover .productItem_img {
+  filter: brightness(0.5);
+}
+
+.button {
+  padding-top: 18px;
+  padding-bottom: 95px;
+  text-align: center;
+}
+
+.button:hover {
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+
+.section-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  gap: 30px;
+  background-color: #222;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 360px;
+  text-align: center;
+}
+
+.item_heading {
+  font-size: 19px;
+  color: #fbfbfb;
+  font-weight: 500;
+}
+
+.text_item {
+  font-size: 13px;
+  color: #d5d4d4;
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.section_subscribe {
+  background-image: url("img/photo_subscribe.png");
+  padding-top: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 34px;
+}
+
+.photo_text {
+  width: 359px;
+  font-size: 20px;
+  text-align: center;
+  color: #222;
+  font-weight: 500;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-bottom: 140px;
+}
+
+.subscribe_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.sub_title {
+  font-size: 24px;
+}
+
+.sub_text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.subscribe_form {
+  display: flex;
+  align-items: baseline;
+}
+
+.subscribe_input {
+  background: #e4e1e1;
+  width: 260px;
+  height: 49px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #5c5353;
+}
+
+.subscribe_button {
+  background: #deabba;
+  width: 100px;
+  height: 49px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 0;
+  color: #fff;
+}
+
+.subscribe_button:hover {
+  background: #f16d7f;
+}
+
+.section_lower {
+  background: #222;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #fbfbfb;
+}
+
+.icon_item:hover .focus {
+  fill: #f16d7f;
+}/*# sourceMappingURL=homeStyle.css.map */
