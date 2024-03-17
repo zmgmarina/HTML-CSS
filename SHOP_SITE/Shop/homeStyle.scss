@@ -21,6 +21,7 @@
     @include displayFlexPosition (space-between);
     padding-top: 20px;
     padding-bottom: 20px;
+    position: relative;
   }
   
   .header_left {
@@ -32,6 +33,34 @@
   .header_right {
     display: flex;
     gap: 25px;
+    align-items: flex-end;
+  }
+
+  .nav{
+    background: #ffffff;
+    box-shadow: 6px 4px 35px;
+    color: rgba(0, 0, 0, 0.21);
+    width: 232px;
+    padding: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 81px;
+    right: 0;
+    transition: right 0.3s;
+  }
+
+  #burger {
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+  }
+
+  #burger:checked ~ .nav {
+    right: -$widthBurgerMenu;
+  }
+
+  .box-content {
+    overflow: hidden;
   }
   
  
@@ -101,7 +130,9 @@
   }
   
   .box-product {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 30px;
     margin-bottom: 30px;
 

@@ -84,9 +84,9 @@ body {
 .filter {
   padding-top: 13px;
   width: $thirdWidthContent;
-  box-sizing: border-box;
   position: relative;
   z-index: 10;
+  
 
   &__content {
     background-color: #fff;
@@ -94,6 +94,7 @@ body {
     padding-right: 16px;
     padding-left: 16px;
     padding-bottom: 16px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
   }
 
   &[open] {
