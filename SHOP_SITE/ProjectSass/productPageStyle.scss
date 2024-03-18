@@ -124,6 +124,23 @@ body {
   margin-top: 64px;
 }
 
+summary {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6f6e6e;
+  
+}
+
+summary::-webkit-details-marker{
+  display: none;
+}
+
+summary::after{
+  content: url("image/Vector2.svg");
+  margin-left: 10px;
+}
+
 .product_description_link {
   font-weight: 400;
   font-size: 14px;
