@@ -37,7 +37,6 @@
   }
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -56,11 +55,10 @@ summary::-webkit-details-marker {
   color: #b1b1b1;
 }
 
- 
-
 
 body {
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 .center {
@@ -89,10 +87,6 @@ body {
     gap: 25px;
     align-items: center;
   }
-}
-
-.box-content {
-  overflow: hidden; //ПОЧЕМУ ТО НЕ РАБОТАЕТ?????
 }
 
 .nav {
