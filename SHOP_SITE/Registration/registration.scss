@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 summary {
@@ -58,6 +59,7 @@ body {
   padding: 32px;
   box-sizing: border-box;
   position: absolute;
+  // position: fixed;
   top: 82px;
   right: 0;
   transition: right 0.3s;
@@ -148,7 +150,7 @@ body {
     width: 341px;
     height: 45px;
     outline: none;
-    border: 1px solid #c6c5c5;
+    border: 1px solid #a4a4a4;
     font-weight: 300;
     font-size: 13px;
     line-height: 16px;
@@ -156,6 +158,26 @@ body {
     color: #222;
     margin-bottom: 20px;
     padding-left: 17px;
+    
+  }
+
+  &__box-radio {
+    margin-bottom: 33px;
+    margin-top: 11px;
+    display: flex;
+  }
+
+  &__input-radio {
+    width: 17px;
+    border: 1px solid #a4a4a4;
+    margin-right: 10px;
+  }
+
+  &__label {
+    margin-right: 20px;
+    font-weight: 300;
+    font-size: 11px;
+    color: #000;
   }
 
   &__text {
@@ -282,6 +304,7 @@ body {
     padding-right: 10px;
     color: #222224;
   }
+  
 
   &__button {
     background: #deabba;
