@@ -76,6 +76,7 @@ body {
     display: flex;
     align-items: baseline;
     gap: 41px;
+    padding-left: 16px;
   }
 
   &__logo:hover {
@@ -86,6 +87,7 @@ body {
     display: flex;
     gap: 25px;
     align-items: center;
+    padding-right: 16px;
   }
 }
 
@@ -153,26 +155,28 @@ body {
   padding-bottom: 60px;
   margin-bottom: 64px;
 
+
   &__heading {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     color: $selectColor;
+    padding-left: 16px;
   }
 }
 
 .content {
   display: flex;
-  flex-wrap: wrap;
   gap: 128px;
+  margin-bottom: 96px;
 }
 
 .section-form {
   width: 360px;
-
   display: flex;
   flex-direction: column;
   gap: 57px;
+  padding-left: 16px;
 }
 
 .box-form {
@@ -236,7 +240,7 @@ body {
     font-family: "Lato", sans-serif;
     color: #4a4a4a;
     transition: 0.3s;
-    margin-bottom: 96px;
+    
   }
 
   &__button:hover {
@@ -255,15 +259,14 @@ body {
   font-weight: 300;
   font-size: 24px;
   color: #000;
+  max-width: 50vw;
 
   &__heading {
     padding-bottom: 22px;
-    line-height: 29px;
   }
 
   &__text {
     padding-bottom: 21px;
-    width: 652px;
   }
 
   &__list {
@@ -279,53 +282,54 @@ body {
   }
 }
 
-.section_subscribe {
+.subscribe {
   background-image: url("image/photo_subscribe.png");
   padding-top: 63px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-}
-
-.photo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: $gapItem;
-  padding-top: 34px;
-}
-
-.photo_text {
-  width: 359px;
-  font-size: 20px;
-  text-align: center;
-  color: $colorText;
-  font-weight: 500;
-}
-
-.subscribe {
-  width: 557px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
   padding-bottom: 140px;
+  
+
+  &__photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gapItem;
+    padding-left: 16px;
+  }
+
+  &__photo-text {
+    width: 359px;
+    font-size: 20px;
+    text-align: center;
+    color: $colorText;
+    font-weight: 500;
+  }
+
+  &__content {
+    width: 557px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
 
   &__info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 7px;
   }
 
   &__title {
-    font-weight: 700;
     font-size: 24px;
   }
 
   &__text {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   &__form {
@@ -333,7 +337,7 @@ body {
   }
 
   &__input {
-    background: #e1e1e1;
+    background: #e4e1e1;
     width: 260px;
     height: 49px;
     border-top-left-radius: 25px;
@@ -341,9 +345,8 @@ body {
     border: 0;
     padding-left: 10px;
     padding-right: 10px;
-    color: #222224;
+    color: #5c5353;
   }
-  
 
   &__button {
     background: #deabba;
@@ -361,20 +364,74 @@ body {
   }
 }
 
+.subscribe_button:hover {
+  background: $selectColor;
+}
+
 .section_lower {
   background: $colorText;
   height: 79px;
   @include displayFlexPosition(space-between);
   flex-wrap: wrap;
+
 }
 
 .copyright {
   font-weight: 300;
   font-size: 16px;
   color: #fbfbfb;
+  padding-left: 16px;
+}
+
+.icon {
+  padding-right: 16px;
 }
 
 .icon_item:hover .focus {
   fill: $selectColor;
   transition: 0.5s;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 376px);
+    padding-right: calc(50% - 376px);
+  }
+
+  .header {
+    gap: 424px;
+    justify-content: center;
+  }
+
+  .content {
+    gap: 22px;
+  }
+
+  .section-info {
+    min-width: 40vw;
+    font-size: 16px;
+    
+    &__heading {
+      padding-bottom: 32px;
+    }
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 59px;
+    padding-bottom: 140px;
+
+    &__content {
+      gap: 27px;
+    }
+  }
+
+  .section_lower {
+    padding: 0 32px;
+  }
+
+
 }
