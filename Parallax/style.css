@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content {
+    background-color: #d8d3d3;
+    min-height: 800px;
+
+}
+
+.content-header {
+    height: 50px;
+    background-color: rgb(150, 147, 144);
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    width: 20%;
+    top: 10%;
+    margin-left: 3%;
+    margin-bottom: 5%;
+}
+
+.main {
+    margin-left: 10%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+}
+
+.parallax {
+    height: 500px;
+    background-image: url("https://wallscloud.net/img/resize/2560/1920/MM/2024-02-18-hexagons-1-61291.jpeg");
+
+    background-attachment: fixed;
+    /*у блока фиксируем фоновое значение */
+}
+
+.menu-heading{
+    font-family: 'Pacifico';
+    
+}
+
+
+.title {
+    font-family: 'Pacifico';
+
+/*обводка кейса*/
+    color: transparent;
+    -webkit-text-stroke: 0.3px rgb(115, 115, 117);
+    
+    /* font-size: 40px;
+	color: #f0c188;
+	text-shadow: 
+		-0   -1px 0   #798DE0,
+		 0   -1px 0   #798DE0,
+		-0    1px 0   #798DE0,
+		 0    1px 0   #798DE0,
+		-1px -0   0   #798DE0,
+		 1px -0   0   #798DE0,
+		-1px  0   0   #798DE0,
+		 1px  0   0   #798DE0,
+		-1px -1px 0   #798DE0,
+		 1px -1px 0   #798DE0,
+		-1px  1px 0   #798DE0,
+		 1px  1px 0   #798DE0,
+		-1px -1px 0   #798DE0,
+		 1px -1px 0   #798DE0,
+		-1px  1px 0   #798DE0,
+		 1px  1px 0   #798DE0; */
+}
+
+.item {
+    height: 700px;
+    background-color: #f9f7f7;
+    background-image: url("https://wallscloud.net/img/resize/2560/1920/MM/2024-02-18-hexagons-1-61291.jpeg");
+    background-size: cover;
+}
+
+.item1 {
+    clip-path: circle(150px at 5px 300px);
+}
+
+.item2 {
+    clip-path: ellipse(130px 140px at 20% 10%);
+}
+
+.item3 {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
