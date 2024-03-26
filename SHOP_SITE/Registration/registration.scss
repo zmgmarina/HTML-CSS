@@ -167,6 +167,7 @@ body {
 
 .content {
   display: flex;
+  justify-content: space-between;
   gap: 128px;
   margin-bottom: 96px;
 }
@@ -259,7 +260,8 @@ body {
   font-weight: 300;
   font-size: 24px;
   color: #000;
-  max-width: 50vw;
+  width: 50vw;
+  padding-right: 16px;
 
   &__heading {
     padding-bottom: 22px;
