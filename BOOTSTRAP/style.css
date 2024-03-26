@@ -1,0 +1,42 @@
+.display-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.text-color {
+    color: rgb(184, 155, 131);
+}
+
+.center {
+    padding-left: calc(50% - 200px);
+    padding-right: calc(50% - 200px);
+
+}
+
+.navbar {
+    background-color: #d6cbcb !important;
+}
+
+.carousel-inner {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 400px;
+    margin: auto;
+}
+
+.carousel-control-prev-icon {
+    color: #649bf4;
+}
+
+.carousel-control-next-icon {
+    background-image: url(./img/arrow-right-solid.svg);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(./img/arrow-left-solid.svg);
+}
+
+
+.btn-primary {
+    background-color: #649bf4;
+}
