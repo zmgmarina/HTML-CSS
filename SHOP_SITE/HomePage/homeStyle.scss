@@ -80,13 +80,6 @@ body {
   &__logo:hover {
     animation: heartbeat 1.5s ease-in-out both;
   }
-
-  &__right {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    
-  }
 }
 
 .header_right {
@@ -499,6 +492,8 @@ body {
 
   .box-product {
     gap: 16px;
+   
+
   }
 
   .button-section {
@@ -539,7 +534,7 @@ body {
   }
 
   .header {
-    padding: 18px 16px;
+    padding: 18px 0;
   }
 
   .icon-menu {
@@ -615,12 +610,12 @@ body {
     }
 
     &__input {
-      width: 245px;
+      width: 235px;
       height: 46px;
     }
 
     &__button {
-      width: 95px;
+      width: 90px;
       height: 46px;
     }
   }

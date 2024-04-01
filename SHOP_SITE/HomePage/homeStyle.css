@@ -66,11 +66,6 @@ body {
 .header__logo:hover {
   animation: heartbeat 1.5s ease-in-out both;
 }
-.header__right {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-}
 
 .header_right {
   display: flex;
@@ -476,7 +471,7 @@ body {
     padding-right: calc(50% - 187px);
   }
   .header {
-    padding: 18px 16px;
+    padding: 18px 0;
   }
   .icon-menu {
     display: none;
@@ -534,11 +529,11 @@ body {
     font-weight: 400;
   }
   .subscribe__input {
-    width: 245px;
+    width: 235px;
     height: 46px;
   }
   .subscribe__button {
-    width: 95px;
+    width: 90px;
     height: 46px;
   }
   .section_lower {

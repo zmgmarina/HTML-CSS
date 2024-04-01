@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="registration.css" />
+      rel="stylesheet">
+    <link rel="stylesheet" href="registration.css">
   </head>
   <body>
     <div class="box-content">
       <header class="header center">
         <div class="header__left">
           <a href="index.html" class="header__logo"
-            ><img src="image/logo1.svg" alt="img"
-          /></a>
-          <img src="image/icon2.svg" alt="img" />
+            ><img src="image/logo1.svg" alt="img"></a>
+          <img src="image/icon2.svg" alt="img">
         </div>
-        <div class="header__right">
+        <div class="header_right">
           <div class="burger-menu-icon">
             <label for="burger">
-              <img class="icon1" src="image/icon3.svg" alt="burger-menu"
-            /></label>
-            <input id="burger" type="checkbox" />
+              <img class="icon1" src="image/icon3.svg" alt="burger-menu">
+            </label>
+            <input id="burger" type="checkbox">
             <nav class="nav">
               <details class="menu">
                 <summary class="menu__summary">MENU</summary>
@@ -64,8 +62,8 @@
               </details>
             </nav>
           </div>
-          <img src="image/icon4.svg" alt="img" />
-          <img src="image/icon5.svg" alt="img" />
+          <img class="icon-menu" src="image/icon4.svg" alt="img">
+          <img class="icon-menu" src="image/icon5.svg" alt="img">
         </div>
       </header>
       <div class="top-head center">
@@ -80,48 +78,42 @@
                 class="box-form__input"
                 type="text"
                 required
-                placeholder="First Name"
-              />
+                placeholder="First Name">
               <input
                 class="box-form__input"
                 type="text"
                 required
-                placeholder="Last Name"
-              />
+                placeholder="Last Name">
               <div class="box-form__box-radio">
                 <input
-                  class="box-form__input-radio"
+                  class="box-form__input-gender"
                   type="radio"
-                  name="radio"
-                />
-                <label class="box-form__label" for="radio">Male</label>
+                  value="man" checked name="gender" id="rb1">
+                <label for="rb1">Male</label>
                 <input
-                  class="box-form__input-radio"
+                  class="box-form__input-gender box-form__input-female"
                   type="radio"
-                  name="radio"
-                />
-                <label class="box-form__label" for="radio">Female</label>
+                  value="woman" name="gender" id="rb2">
+                <label for="rb2">Female</label>
               </div>
               <h3 class="box-form__heading">Login details</h3>
               <input
                 class="box-form__input"
                 type="email"
                 required
-                placeholder="Email"
-              />
+                placeholder="Email">
               <input
                 class="box-form__input"
                 type="password"
                 required
-                placeholder="Password"
-              />
+                placeholder="Password">
               <p class="box-form__text">
                 Please use 8 or more characters, with at least 1 number and a
                 mixture of uppercase and lowercase letters
               </p>
               <button class="box-form__button">
                 JOIN NOW
-                <img class="box-form__vector" src="image/Group.svg" alt="img" />
+                <img class="box-form__vector" src="image/Group.svg" alt="img">
               </button>
             </form>
           </div>
@@ -144,7 +136,7 @@
       <footer>
         <div class="subscribe center">
           <div class="subscribe__photo">
-            <img src="image/Intersect3.png" alt="photo" />
+            <img src="image/Intersect3.png" alt="photo">
             <h3 class="subscribe__photo-text">
               &laquo;Vestibulum quis porttitor dui! Quisque viverra
               nunc&nbsp;mi, a&nbsp;pulvinar purus condimentum&raquo;
@@ -159,8 +151,7 @@
               <input
                 type="email"
                 class="subscribe__input"
-                placeholder="Enter Your Email"
-              />
+                placeholder="Enter Your Email">
               <button class="subscribe__button" type="submit">Subscribe</button>
             </form>
           </div>

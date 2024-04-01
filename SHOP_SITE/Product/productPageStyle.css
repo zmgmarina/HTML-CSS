@@ -72,7 +72,7 @@ body {
   color: #f16d7f;
 }
 
-.product-section {
+.product {
   border: 1px solid #eaeaea;
   background-color: #f7f7f7;
   display: flex;
@@ -81,8 +81,7 @@ body {
   padding-bottom: 42px;
   position: relative;
 }
-
-.product_content {
+.product__content {
   border: 1px solid #eaeaea;
   width: 1140px;
   background-color: #fff;
@@ -94,15 +93,13 @@ body {
   position: absolute;
   top: 719px;
 }
-
-.type_product {
+.product__type-product {
   font-weight: 300;
   font-size: 14px;
   color: #f16d7f;
   margin-bottom: 12px;
 }
-
-.brand_product {
+.product__brand-product {
   font-weight: 300;
   font-size: 18px;
   line-height: 20px;
@@ -110,8 +107,7 @@ body {
   margin-top: 12px;
   margin-bottom: 48px;
 }
-
-.product_text {
+.product__text {
   width: 555px;
   font-weight: 300;
   font-size: 14px;
@@ -119,20 +115,39 @@ body {
   color: #5e5e5e;
   text-align: center;
 }
-
-.product_price {
+.product__price {
   margin-top: 32px;
   margin-bottom: 64px;
   font-weight: 300;
   font-size: 24px;
   color: #f16d7f;
 }
-
-.product_description {
+.product__line {
+  width: 642px;
+}
+.product__description {
   display: flex;
   justify-content: center;
   gap: 23px;
   margin-top: 64px;
+}
+.product__description-link {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6f6e6e;
+}
+.product__button-addCart {
+  font-weight: 400;
+  font-size: 16px;
+  color: #f16d7f;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  padding: 14px 57px 14px 24px;
+  border: 1px solid #f16d7f;
+  background-color: #fff;
+  margin-top: 48px;
+  margin-bottom: 64px;
 }
 
 summary {
@@ -151,31 +166,13 @@ summary::after {
   margin-left: 10px;
 }
 
-.product_description_link {
-  font-weight: 400;
-  font-size: 14px;
-  color: #6f6e6e;
-}
-
-.button_addCart {
-  font-weight: 400;
-  font-size: 16px;
-  color: #f16d7f;
-  display: flex;
-  align-items: center;
-  gap: 23px;
-  padding: 14px 57px 14px 24px;
-  border: 1px solid #f16d7f;
-  background-color: #fff;
-  margin-top: 48px;
-  margin-bottom: 64px;
-}
-
 .box-product {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-bottom: 128px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .productItem {
@@ -238,35 +235,53 @@ summary::after {
 }
 
 .subscribe {
+  background-image: url("image/photo_subscribe.png");
+  padding-top: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.subscribe__photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 34px;
+  padding-left: 16px;
+}
+.subscribe__photo-text {
+  width: 359px;
+  font-size: 20px;
+  text-align: center;
+  color: #222;
+  font-weight: 500;
+}
+.subscribe__content {
+  width: 557px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
   padding-bottom: 140px;
-  padding-right: 16px;
 }
-
-.subscribe_text {
+.subscribe__info {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 7px;
 }
-
-.sub_title {
+.subscribe__title {
   font-size: 24px;
 }
-
-.sub_text {
+.subscribe__text {
   font-size: 18px;
   font-weight: 500;
 }
-
-.subscribe_form {
+.subscribe__form {
   display: flex;
 }
-
-.subscribe_input {
+.subscribe__input {
   background: #e4e1e1;
   width: 260px;
   height: 49px;
@@ -277,8 +292,7 @@ summary::after {
   padding-right: 10px;
   color: #5c5353;
 }
-
-.subscribe_button {
+.subscribe__button {
   background: #deabba;
   width: 100px;
   height: 49px;
@@ -286,9 +300,9 @@ summary::after {
   border-bottom-right-radius: 25px;
   border: 0;
   color: #fff;
+  transition: 0.3s;
 }
-
-.subscribe_button:hover {
+.subscribe__button:hover {
   background: #f16d7f;
 }
 
@@ -320,36 +334,131 @@ summary::after {
     padding-left: calc(50% - 376px);
     padding-right: calc(50% - 376px);
   }
-  .header {
-    gap: 424px;
-    justify-content: center;
-  }
-  .top-head {
-    justify-content: center;
-    gap: 333px;
-  }
-  .product_content {
-    width: 768px;
+  .product__content {
+    width: 100vw;
     top: 778px;
+  }
+  .product__text {
+    width: 555px;
   }
   .box-product {
     gap: 16px;
-    margin-top: 35px;
   }
   .item-display-none {
     display: none;
   }
-  .section_subscribe {
+  .subscribe {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     gap: 59px;
   }
-  .section_subscribe__content {
+  .subscribe__content {
     gap: 27px;
   }
   .section_lower {
     padding: 0 32px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 187px);
+    padding-right: calc(50% - 187px);
+  }
+  .header {
+    padding: 18px 0;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .nav {
+    width: 180px;
+    padding: 28px;
+    top: 78px;
+  }
+  .header__right {
+    padding-right: 0;
+  }
+  .top-head {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+  .top-head_heading {
+    padding-left: 0;
+  }
+  .breadcrumbs {
+    padding-right: 0;
+  }
+  .product {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 29px;
+  }
+  .product__photo-women {
+    width: 374px;
+    height: 454px;
+  }
+  .product__content {
+    top: 513px;
+  }
+  .product__brand-product {
+    margin-bottom: 32px;
+  }
+  .product__text {
+    width: 326px;
+  }
+  .product__price {
+    margin-bottom: 31px;
+  }
+  .product__line {
+    width: 174px;
+    height: 3px;
+  }
+  .product__description {
+    margin-top: 48px;
+  }
+  summary {
+    font-size: 10px;
+  }
+  .box-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 677px;
+  }
+  .productItem {
+    padding-top: 0;
+  }
+  .subscribe__photo-text {
+    width: 310px;
+    height: 54px;
+    font-size: 18px;
+  }
+  .subscribe__content {
+    gap: 22px;
+  }
+  .subscribe__text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .subscribe__input {
+    width: 235px;
+    height: 46px;
+  }
+  .subscribe__button {
+    width: 90px;
+    height: 46px;
+  }
+  .section_lower {
+    max-width: 375vw;
+    height: 143px;
+    gap: 40px;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding-bottom: 9px;
   }
 }/*# sourceMappingURL=productPageStyle.css.map */

@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+      rel="stylesheet">
+    <link rel="stylesheet" href="registration.css">
   </head>
   <body>
     <div class="box-content">
       <header class="header center">
         <div class="header__left">
           <a href="index.html" class="header__logo"
-            ><img src="image/logo1.svg" alt="img"
-          /></a>
-          <img src="image/icon2.svg" alt="img" />
+            ><img src="image/logo1.svg" alt="img"></a>
+          <img src="image/icon2.svg" alt="img">
         </div>
         <div class="header__right">
           <div class="burger-menu-icon">
             <label for="burger">
-              <img class="icon1" src="image/icon3.svg" alt="burger-menu"
-            /></label>
-            <input id="burger" type="checkbox" />
+              <img class="icon1" src="image/icon3.svg" alt="burger-menu"></label>
+            <input id="burger" type="checkbox">
             <nav class="nav">
               <details class="menu">
                 <summary class="menu__summary">MENU</summary>
@@ -64,54 +61,52 @@
               </details>
             </nav>
           </div>
-          <img src="image/icon4.svg" alt="img" />
-          <img src="image/icon5.svg" alt="img" />
+          <img class="icon-menu" src="image/icon4.svg" alt="img">
+          <img class="icon-menu" src="image/icon5.svg" alt="img">
         </div>
       </header>
       <div class="top-head center">
         <h2 class="top-head__heading">SHOPPING CART</h2>
       </div>
       <div class="content center">
-        <div class="section-product">
+        <div class="section-product center">
           <div class="box-product">
-            <img src="image/product_1.jpg" alt="photo" />
-            <div class="box-product__product-description">
-              <h3 class="box-product__name-product">MANGO PEOPLE T-SHIRT</h3>
-              <p class="box-product__item-description">
-                Price: <span class="box-product__price"> $300</span>
-              </p>
-              <p class="box-product__item-description">Color:<span class="box-product__item-span"> Red</span> </p>
-              <p class="box-product__item-description">Size:<span class="box-product__item-span"> Xl</p>
-              <div class="box-product__item-quantity">
-                <p>Quantity:</p>
-                <input
-                  class="box-product__input-quantity"
-                  value="2"
-                  type="number"
-                />
-              </div>
-            </div>
-            <img class="cross" src="image/cross.svg" alt="" />
-          </div>
-          <div class="box-product">
-            <img src="image/product_2.jpg" alt="photo" />
+            <img class="box-product__photo" src="image/product_1.jpg" alt="photo">
             <div class="box-product__product-description">
               <h3 class="box-product__name-product">MANGO PEOPLE T-SHIRT</h3>
               <p class="box-product__item-description">
                 Price: <span class="box-product__price">$300</span>
               </p>
-              <p class="box-product__item-description">Color:<span class="box-product__item-span"> Red</span> </p>
-              <p class="box-product__item-description">Size:<span class="box-product__item-span"> Xl</p>
+              <p class="box-product__item-description">Color:<span class="box-product__item-span">Red</span></p>
+              <p class="box-product__item-description">Size:<span class="box-product__item-span">Xl </span></p>
               <div class="box-product__item-quantity">
                 <p>Quantity:</p>
                 <input
                   class="box-product__input-quantity"
                   value="2"
-                  type="number"
-                />
+                  type="number">
               </div>
             </div>
-            <img class="cross" src="image/cross.svg" alt="" />
+            <img class="cross" src="image/cross.svg" alt="">
+          </div>
+          <div class="box-product center">
+            <img class="box-product__photo" src="image/product_2.jpg" alt="photo">
+            <div class="box-product__product-description">
+              <h3 class="box-product__name-product">MANGO PEOPLE T-SHIRT</h3>
+              <p class="box-product__item-description">
+                Price: <span class="box-product__price">$300</span>
+              </p>
+              <p class="box-product__item-description">Color:<span class="box-product__item-span"> Red</span></p>
+              <p class="box-product__item-description">Size:<span class="box-product__item-span"> Xl</span></p>
+              <div class="box-product__item-quantity">
+                <p>Quantity:</p>
+                <input
+                  class="box-product__input-quantity"
+                  value="2"
+                  type="number">
+              </div>
+            </div>
+            <img class="cross" src="image/cross.svg" alt="">
           </div>
           <div class="section_button">
             <button class="section_button__buttons">CLEAR SHOPPING CART</button>
@@ -123,17 +118,17 @@
           <div class="box-form">
             <h2 class="box-form__heading">SHIPPING ADRESS</h2>
             <form action="#">
-              <input value="Bangladesh" class="box-form__input" type="text" />
+              <input value="Bangladesh" class="box-form__input" type="text">
               <input
                 class="box-form__input"
                 type="text"
                 required
-                placeholder="State"/>
+                placeholder="State">
               <input
                 class="box-form__input"
                 type="text"
                 required
-                placeholder="Postcode / Zip"/>
+                placeholder="Postcode / Zip">
               <button class="box-form__button">GET A QUOTE</button>
             </form>
           </div>
@@ -154,7 +149,7 @@
       <footer>
         <div class="subscribe center">
           <div class="subscribe__photo">
-            <img src="image/Intersect3.png" alt="photo" />
+            <img src="image/Intersect3.png" alt="photo">
             <h3 class="subscribe__photo-text">
               &laquo;Vestibulum quis porttitor dui! Quisque viverra
               nunc&nbsp;mi, a&nbsp;pulvinar purus condimentum&raquo;
@@ -169,8 +164,7 @@
               <input
                 type="email"
                 class="subscribe__input"
-                placeholder="Enter Your Email"
-              />
+                placeholder="Enter Your Email">
               <button class="subscribe__button" type="submit">Subscribe</button>
             </form>
           </div>

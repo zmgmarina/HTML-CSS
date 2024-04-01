@@ -67,10 +67,11 @@ body {
 .header__logo:hover {
   animation: heartbeat 1.5s ease-in-out both;
 }
-.header__right {
+
+.header_right {
   display: flex;
   gap: 25px;
-  align-items: center;
+  align-items: flex-end;
   padding-right: 16px;
 }
 
@@ -88,6 +89,7 @@ body {
 }
 
 #burger {
+  position: absolute;
   left: -999999px;
   visibility: hidden;
 }
@@ -178,12 +180,12 @@ body {
   margin-top: 11px;
   display: flex;
 }
-.box-form__input-radio {
+.box-form__input-gender {
   width: 17px;
   border: 1px solid #a4a4a4;
   margin-right: 10px;
 }
-.box-form__label {
+.box-form label {
   margin-right: 20px;
   font-weight: 300;
   font-size: 11px;
@@ -237,7 +239,7 @@ body {
 }
 .section-info__list li::before {
   content: "✓ ";
-  padding-right: 6px;
+  padding-right: 22px;
 }
 
 .subscribe {
@@ -345,10 +347,6 @@ body {
     padding-left: calc(50% - 376px);
     padding-right: calc(50% - 376px);
   }
-  .header {
-    gap: 424px;
-    justify-content: center;
-  }
   .content {
     gap: 22px;
   }
@@ -372,5 +370,71 @@ body {
   }
   .section_lower {
     padding: 0 32px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 187px);
+    padding-right: calc(50% - 187px);
+  }
+  .header {
+    padding: 18px 0;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .nav {
+    width: 180px;
+    padding: 28px;
+    top: 78px;
+  }
+  .top-head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .section-form {
+    padding-left: 0;
+  }
+  .section-info {
+    width: 85vw;
+    padding-right: 0;
+  }
+  .subscribe {
+    padding-bottom: 109px;
+  }
+  .subscribe__photo-text {
+    width: 310px;
+    height: 54px;
+    font-size: 18px;
+  }
+  .subscribe__content {
+    gap: 22px;
+  }
+  .subscribe__text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .subscribe__input {
+    width: 235px;
+    height: 46px;
+  }
+  .subscribe__button {
+    width: 80px;
+    height: 46px;
+  }
+  .section_lower {
+    max-width: 375vw;
+    height: 143px;
+    gap: 25px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
   }
 }/*# sourceMappingURL=registration.css.map */
